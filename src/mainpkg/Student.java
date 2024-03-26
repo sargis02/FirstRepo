@@ -1,16 +1,14 @@
-package mainpkg;
+package com.example;
 
 public class Student {
-    int id;
-    String name;
-    float cgpa;
+    private int id;
+    private String name;
+    private float cgpa;
 
     public Student() {
-        id=0; name="TBA"; cgpa=0.0f;
+        this(0, "TBA", 0.0f);
     }
 
-    
-    
     public Student(int id, String name, float cgpa) {
         this.id = id;
         this.name = name;
@@ -35,13 +33,4 @@ public class Student {
 
     public float getCgpa() {
         return cgpa;
-    }
 
-    public void setCgpa(float cgpa) {
-        this.cgpa = cgpa;
-    }
-    
-    String getStringEquivalent(){
-        return "ID=" + id + ", Name=" + name + ", CGPA=" + cgpa;
-    }
-}
